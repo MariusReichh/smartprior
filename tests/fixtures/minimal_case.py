@@ -1,0 +1,1 @@
+"""Handrechnungs-Testfall fuer Plausibilitaetspruefung."""

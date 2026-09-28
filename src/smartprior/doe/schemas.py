@@ -1,0 +1,1 @@
+"""Definition der Grenzwertkombinationen (Schubladen)."""

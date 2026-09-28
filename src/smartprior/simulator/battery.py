@@ -1,0 +1,1 @@
+"""Batteriespeicher: Parameterobjekt und Bilanzierung."""

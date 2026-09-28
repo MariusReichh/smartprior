@@ -1,0 +1,1 @@
+"""Waermespeicher: Zustandsgroesse, kein Dimensionierungsparameter."""
