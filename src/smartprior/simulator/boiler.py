@@ -1,1 +1,1 @@
-"""Gaskessel: Parameterobjekt und Dispatch-Verhalten."""
+"""Gas boiler: parameter object and dispatch behavior."""

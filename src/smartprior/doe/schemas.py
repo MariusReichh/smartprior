@@ -1,1 +1,1 @@
-"""Definition der Grenzwertkombinationen (Schubladen)."""
+"""Definition of boundary-condition combinations ("drawers")."""

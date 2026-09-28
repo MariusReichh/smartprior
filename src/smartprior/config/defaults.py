@@ -1,1 +1,1 @@
-"""Zentrale technologietypische Konstanten: MPL, Mindestlaufzeiten. Einziger Ort fuer diese Werte."""
+"""Central technology-typical constants: minimum part load, minimum runtimes. Single source of truth for these values."""

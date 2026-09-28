@@ -1,1 +1,1 @@
-# Methodik
+# Methodology

@@ -1,1 +1,1 @@
-"""Batteriespeicher: Parameterobjekt und Bilanzierung."""
+"""Battery storage: parameter object and balancing logic."""

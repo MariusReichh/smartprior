@@ -1,1 +1,1 @@
-"""GPR-Auswertung inkl. nachgelagerter TAC/CO2-Verrechnung."""
+"""GPR evaluation including downstream TAC/CO2 post-processing."""

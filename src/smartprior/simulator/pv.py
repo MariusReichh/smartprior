@@ -1,1 +1,1 @@
-"""PV-Erzeugung: Parameterobjekt und Berechnung."""
+"""PV generation: parameter object and calculation."""

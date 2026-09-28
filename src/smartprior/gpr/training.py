@@ -1,1 +1,1 @@
-"""GPR-Training auf energetischen Zielgroessen."""
+"""GPR training on energetic target quantities."""

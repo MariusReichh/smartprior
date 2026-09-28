@@ -1,1 +1,1 @@
-"""Merit-Order-Zustandsautomat: Grenzkosten-Sortierung, MPL/Mindestlaufzeit-Logik."""
+"""Merit-order state machine: marginal-cost sorting, minimum part load / minimum runtime logic."""

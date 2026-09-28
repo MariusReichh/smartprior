@@ -1,1 +1,1 @@
-"""Waermepumpe: Parameterobjekt und Dispatch-Verhalten."""
+"""Heat pump: parameter object and dispatch behavior."""

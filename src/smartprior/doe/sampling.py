@@ -1,1 +1,1 @@
-"""LHS/DoE-Sampling ueber den Parameterraum."""
+"""DoE sampling (e.g. Latin Hypercube) over the parameter space."""

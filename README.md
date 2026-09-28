@@ -1,35 +1,35 @@
 # SmartPrior
 
-SmartPrior ist eine Methodik zur schnellen Optimierung von Energieversorgungssystemen (EVS) mittels vorab trainierter Gaussprozessregressions-Modelle (GPR). Statt für jeden Anwendungsfall eine neue MILP-Formulierung oder Simulation aufzusetzen, approximieren die GPR-Modelle rein energetische Zielgroessen fuer typische Randbedingungs-Kombinationen ("Schubladen"). Oekonomische und oekologische Bewertung (TAC, CO2) erfolgt nachgelagert und variabel, ohne Neutraining.
+SmartPrior is a methodology for the rapid optimization of energy supply systems (EVS) using pre-trained Gaussian process regression (GPR) models. Instead of setting up a new MILP formulation or simulation for every application case, GPR models approximate purely energetic target quantities for typical combinations of boundary conditions ("drawers"). Economic and ecological evaluation (TAC, CO2) is performed afterwards and can be varied freely, without retraining the GPR models.
 
-Dieses Repository enthaelt:
-- einen offenen, regelbasierten Merit-Order-Dispatch-Simulator als Ground-Truth-Referenz
-- die DoE-Sampling-Pipeline zur Erzeugung der Trainingsdaten
-- das GPR-Training und die nachgelagerte TAC/CO2-Verrechnung
-- eine eigene Partikelschwarmoptimierung (PSO) auf Basis der GPR-Modelle
-- die Skripte zur Reproduktion der im zugehoerigen Paper gezeigten Ergebnisse
+This repository contains:
+- an open, rule-based merit-order dispatch simulator serving as the ground-truth reference
+- the design-of-experiments (DoE) sampling pipeline used to generate training data
+- GPR training and the downstream TAC/CO2 post-processing
+- a custom particle swarm optimization (PSO) implementation operating on the GPR models
+- the scripts used to reproduce the results shown in the associated paper
 
-## Zugehoeriges Paper
+## Associated Paper
 
-Wird nach Veroeffentlichung ergaenzt (Titel, Autoren, DOI).
+To be added upon publication (title, authors, DOI).
 
-## Repository-Struktur
+## Repository Structure
 
 ```
-src/smartprior/simulator/     Merit-Order-Dispatch-Simulator (Ground Truth)
-src/smartprior/doe/           DoE-Sampling und Schubladen-Definitionen
-src/smartprior/gpr/           GPR-Training und -Auswertung
-src/smartprior/optimization/  Eigene PSO-Implementierung
-src/smartprior/config/        Zentrale technologietypische Konstanten
-tests/                        Unit- und Plausibilitaetstests
-data/                         Offene Beispieldaten und externe Referenzquellen
-experiments/                  Konkrete Simulations- und Vergleichslaeufe
-paper/                        Skripte zur Erzeugung der Paper-Abbildungen und -Tabellen
+src/smartprior/simulator/     Merit-order dispatch simulator (ground truth)
+src/smartprior/doe/           DoE sampling and drawer definitions
+src/smartprior/gpr/           GPR training and evaluation
+src/smartprior/optimization/  Custom PSO implementation
+src/smartprior/config/        Central technology-typical constants
+tests/                        Unit and plausibility tests
+data/                         Open example data and external reference sources
+experiments/                  Concrete simulation and comparison runs
+paper/                        Scripts generating the paper's figures and tables
 ```
 
 ## Installation
 
-Voraussetzung: Python 3.10 oder neuer.
+Requires Python 3.10 or newer.
 
 ```
 python -m venv .venv
@@ -42,29 +42,29 @@ pip install -e ".[dev]"
 ```python
 from smartprior.simulator.runner import simulate
 
-result = simulate(...)  # Parameterschnittstelle siehe src/smartprior/simulator/runner.py
+result = simulate(...)  # see src/smartprior/simulator/runner.py for the full parameter interface
 ```
 
-Ein vollstaendiges Beispiel folgt in `notebooks/01_dispatch_demo.ipynb`.
+A complete example is provided in `notebooks/01_dispatch_demo.ipynb`.
 
-## Reproduktion der Paper-Ergebnisse
+## Reproducing the Paper Results
 
-Alle im Paper gezeigten Abbildungen und Tabellen lassen sich aus den Skripten in `experiments/scripts/` und `paper/figures/` bzw. `paper/tables/` reproduzieren. Die verwendeten Parameterkombinationen sind in `experiments/configs/` dokumentiert.
+All figures and tables shown in the paper can be reproduced from the scripts in `experiments/scripts/` and `paper/figures/` / `paper/tables/`. The parameter combinations used are documented in `experiments/configs/`.
 
-## Daten
+## Data
 
-`data/examples/` enthaelt ausschliesslich offene bzw. synthetische Beispieldaten (Lastgaenge, Wetterdaten), die mit diesem Repository frei nutzbar sind. Herkunft und Lizenz jeder Datei sind in `data/README.md` dokumentiert.
+`data/examples/` contains exclusively open or synthetic example data (load profiles, weather data) that are freely usable together with this repository. The origin and license of each file are documented in `data/README.md`.
 
-Interne Kennwerte aus dem SmartPrior-Schlussbericht sind **nicht** Teil dieses Repositories. Fuer technologische Kosten- und Wirkungsgradkennwerte (BHKW, Waermepumpe, Gaskessel, Speicher, PV, Solarthermie) wurden ausschliesslich offen zugaengliche Referenzquellen verwendet (Details in `data/README.md`).
+Internal figures from the SmartPrior final project report are **not** part of this repository. For technology cost and efficiency parameters (CHP, heat pump, gas boiler, storage, PV, solar thermal), only openly accessible reference sources were used (details in `data/README.md`).
 
 ## Data and Code Availability Statement
 
-Der vollstaendige Quellcode ist unter der MIT-Lizenz oeffentlich verfuegbar unter: https://github.com/MariusReichh/smartprior. Alle verwendeten Beispieldaten sind im Repository unter `data/examples/` enthalten. Interne, projektvertrauliche Kennwerte wurden durch offen zugaengliche Referenzwerte ersetzt (siehe `data/README.md`).
+The complete source code is publicly available under the MIT license at: https://github.com/MariusReichh/smartprior. All example data used are included in the repository under `data/examples/`. Internal, project-confidential parameter values were replaced with openly accessible reference values (see `data/README.md`).
 
-## Lizenz
+## License
 
-MIT, siehe [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
 
-## Zitation
+## Citation
 
-Siehe [CITATION.cff](CITATION.cff).
+See [CITATION.cff](CITATION.cff).

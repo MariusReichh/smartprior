@@ -1,1 +1,1 @@
-"""Oeffentliche Simulate-Funktion: Jahres-Loop, stabile Parameterschnittstelle fuer DoE."""
+"""Public simulate() function: annual time-step loop, stable parameter interface for DoE."""

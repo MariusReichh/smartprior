@@ -1,1 +1,1 @@
-"""Solarthermie: fixe Prioritaet, Dimensionierung als Einflussgroesse."""
+"""Solar thermal: fixed dispatch priority, sizing as an influencing variable."""

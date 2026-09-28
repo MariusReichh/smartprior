@@ -1,1 +1,1 @@
-"""BHKW: Parameterobjekt (inkl. MPL, Mindestlaufzeiten, Grenzkosten) und Dispatch-Verhalten."""
+"""CHP unit: parameter object (incl. minimum part load, minimum runtimes, marginal cost) and dispatch behavior."""

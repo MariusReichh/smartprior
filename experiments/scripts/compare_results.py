@@ -1,1 +1,1 @@
-"""Vergleichsmetriken GT vs. SmartPrior. Metrik-Funktion (z.B. MAE auf TAC, Rechenzeit) als Argument uebergeben, nicht hartkodiert."""
+"""Comparison metrics: ground truth vs. SmartPrior. Metric function (e.g. MAE on TAC, runtime) is passed as an argument, not hardcoded."""
